@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileWizard"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="FileWizard" Height="390.976" Width="531.829">
+    <Grid Margin="0,0,0,-0.2">
+        <Label Content="Directory: " HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.009,-0.843"/>
+        <TextBox x:Name="TextBox_Directory" HorizontalAlignment="Left" Height="23" Margin="114,28,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="216"/>
+        <ListBox x:Name="ListBox_FileList" HorizontalAlignment="Left" Height="181" Margin="10,130,0,0" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.497,1.133"/>
+        <Button x:Name="Button_List" Content="List" HorizontalAlignment="Left" Margin="354,28,0,0" VerticalAlignment="Top" Width="154" Click="Button_List_Click"/>
         
+        <Grid x:Name="Grid_SubGrid" Visibility="Hidden">
+            <Label Content="Extension: " HorizontalAlignment="Left" Margin="7,55,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TextBox_Extension" HorizontalAlignment="Left" Height="23" Margin="114,58,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="70"/>
+            <Label Content="Saving Directory: " HorizontalAlignment="Left" Margin="7,83,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TextBox_SavingDirectory" HorizontalAlignment="Left" Height="23" Margin="114,86,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="216" RenderTransformOrigin="1.987,0.579"/>
+            <Button x:Name="Button_Save" Content="Save" HorizontalAlignment="Left" Margin="354,86,0,0" VerticalAlignment="Top" Width="154" Height="23" Click="Button_Save_Click"/>
+        </Grid>
+        <Label Content="File Count: " HorizontalAlignment="Left" Margin="397,326,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label_FileCount" Content="0" HorizontalAlignment="Left" Margin="470,326,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
